@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mern X Ai project</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Mern X Ai project</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Member List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="side_panel">
+            <div class="Headings"><h1>Input here</h1></div>
+        
+            <!-- NOT a form anymore -->
+            <div id="upload-form" enctype="multipart/form-data">
+                <label for="modelFile">Upload Model (.pt):</label>
+                <input type="file" id="modelFile" name="modelFile" accept=".pt" required>
+        
+                <label for="datasetSelect">Choose Dataset:</label>
+                <select id="datasetSelect" name="dataset">
+                    <option value="daily_dialog_100.csv">Daily Dialog 100</option>
+                    <option value="daily_dialog_500.csv">Daily Dialog 500</option>
+                    <option value="daily_dialog_1000.csv">Daily Dialog 1000</option>
+                    <option value="daily_dialog_2000.csv">Daily Dialog 2000</option>
+                </select>
+        
+                <button id="submitBtn" type="button">Submit</button>
+            </div>
+        </div>
+        
+
+        <div class="Main_window">
+            <div class="Headings"><h1>Output screen</h1></div>
+            <div id="outputData" style="padding: 20px;"></div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
