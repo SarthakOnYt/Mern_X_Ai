@@ -5,6 +5,11 @@
 A comprehensive tool to evaluate and compare AI model performance across multiple metrics.
 
 ---
+# Note to the judges:
+WE SETUP OUR OWN SERVER AN NO PRE-EXISTING API WAS USED
+SERVER IS RUNNING OFF OF A 320GB HDD AND IS MODULAR
+BASIC JS METHODS SUCH AS (FETCH) AND (FLASK) IN PYTHON WAS USED
+
 
 ## 🚀 Project Overview
 
