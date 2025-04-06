@@ -11,13 +11,17 @@ A comprehensive tool to evaluate and compare AI model performance across multipl
 **MarkAI** is a lightweight, user-friendly, web-based benchmarking tool built to assess the performance of AI models. It offers detailed insights into model behavior including accuracy, inference time, and system resource usage, making it ideal for developers, IT professionals, and researchers.
 
 # HOW TO RUN
-Due to Issues b/w HTTP and HTTPS we are not properly able to hoste the site without ssl certificate
-So in order to runthis site simply go into "Backend folder and run {main.py}"
+use vpn if this link is not accissible: http://markai.42web.io/?i=1
+
+If it says unable to contact backend, please contact team Codestorm
+
+_______________________OR_________________________
+So in order to run this site simply go into "Backend folder and run {main.py}"
 then go into INDEX.JS line 71 and modify server ip to local ip at port 5000
 
 Then simply launch the index.html file
 some .pt models have been provided in models folder
-
+ NOTE: YOU WILL NEED TO INSTALL ALL MODULES REQUIRED IN REQUIREMENTS.TXT
 ---
 
 ## 👥 Team CodeStorm
