@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARK AI</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    <div class="container">
+        <header id="header">
+            <a href="#" class="logo">MARK AI</a>
+            <nav class="navigation">
+                <a href="howtouse" class="nav-link">how to use</a>
+                <a href="whytouse.html" class="nav-link">why to use</a>
+                <a href="about.html" class="nav-link">about us</a>
+            </nav>
+        </header>
+        
+        <main class="hero">
+            <div class="gradient-bg gradient-1"></div>
+            <div class="gradient-bg gradient-2"></div>
+            <div class="gradient-bg gradient-3"></div>
+            
+            <div class="hero-content">
+                <h1>Powering the future with intelligent solutions</h1>
+                <p>MARK AI helps businesses transform their operations through cutting-edge artificial intelligence and machine learning technologies that drive growth and innovation.</p>
+                <a href="#input-section" class="btn" id="get-started-btn">Get Started</a>
+            </div>
+        </main>
+        
+        <section id="input-section" class="input-section">
+            <h2 class="section-title">Model Configuration</h2>
+            <div class="divider"></div>
+            
+            <div class="form-group">
+                <label class="form-label">Upload Model (.pt)</label>
+                <div class="file-upload">
+                    <button class="file-upload-btn">Choose File</button>
+                    <span class="file-name" id="file-name-display">No file chosen</span>
+                    <input type="file" class="file-input" id="modelFile" accept=".pt">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Choose Dataset</label>
+                <div class="select-wrapper">
+                    <select class="select-input" id="datasetSelect">
+                        <option value="daily_dialog_100.csv">Daily Dialog 100</option>
+                        <option value="daily_dialog_500.csv">Daily Dialog 500</option>
+                        <option value="daily_dialog_1000.csv">Daily Dialog 1000</option>
+                        <option value="daily_dialog_2000.csv">Daily Dialog 2000</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button class="process-btn" id="submitBtn">Process Data</button>
+            
+            <div id="outputData" class="output-section">
+                <!-- Results will appear here after form submission -->
+            </div>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
