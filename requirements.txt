@@ -1,0 +1,8 @@
+torch
+pandas
+GPUtil
+psutil
+Flask
+flask-cors
+reportlab
+matplotlib
