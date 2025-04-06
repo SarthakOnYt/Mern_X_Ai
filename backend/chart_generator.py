@@ -41,15 +41,26 @@ def generate_individual_charts(metrics, model_name, base_folder):
         current = metrics[key]
         average = avg.get(key, 0)
 
-        plt.figure(figsize=(5, 4))
-        plt.bar(['Current', 'Average'], [current, average], color=['skyblue', 'lightcoral'])
-        plt.title(f'{label} Comparison')
-        plt.ylabel(label)
+        fig, ax = plt.subplots(figsize=(5, 4))
+        fig.patch.set_facecolor('#0c0c0e')
+        ax.set_facecolor('#0c0c0e')
+
+        bars = ax.bar(['Current', 'Average'], [current, average], color=['skyblue', 'lightcoral'])
+        ax.set_title(f'{label} Comparison', color='white')
+        ax.set_ylabel(label, color='white')
+        ax.tick_params(colors='white')
+
+        for spine in ax.spines.values():
+            spine.set_edgecolor('white')
+
+        for bar in bars:
+            bar.set_edgecolor('white')
+
         plt.tight_layout()
 
         chart_filename = f'{key}.png'
         chart_path = os.path.join(model_folder, chart_filename)
-        plt.savefig(chart_path)
+        plt.savefig(chart_path, facecolor=fig.get_facecolor())
         plt.close()
 
         chart_paths[key] = chart_path
