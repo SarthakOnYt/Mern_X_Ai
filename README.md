@@ -15,7 +15,8 @@ Due to Issues b/w HTTP and HTTPS we are not properly able to hoste the site with
 So in order to runthis site simply go into "Backend folder and run {main.py}"
 then go into INDEX.JS line 71 and modify server ip to local ip at port 5000
 
-
+Then simply launch the index.html file
+some .pt models have been provided in models folder
 
 ---
 
