@@ -68,7 +68,7 @@ const modelInput = document.getElementById("modelFile");
 const datasetSelect = document.getElementById("datasetSelect");
 const submitButton = document.getElementById("submitBtn");
 const outputDiv = document.getElementById("outputData");
-const server_link = "http://publisher-hybrid.gl.at.ply.gg:15929/"; // Backend Flask server
+const server_link = "https://publisher-hybrid.gl.at.ply.gg:15929/"; // Backend Flask server
 
 // Prevent multiple event listeners
 if (!submitButton.hasAttribute("data-bound")) {
